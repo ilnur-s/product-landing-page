@@ -72,11 +72,11 @@ body {
   text-decoration: none;
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   color: #0B132A;
 }
 
-.header__title-bold {
+.text-bold {
   font-weight: bold;
 }
 
@@ -132,4 +132,42 @@ body {
 .header__sign-up:active {
   background-color: #F53855;
   color: #F6F6F6;
+}
+
+/* Header style end */
+
+/* Intro style start */
+
+.intro__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 205px;
+}
+
+.vpn-info {
+  max-width: 555px;
+}
+
+.vpn-info__title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.vpn-info__subtitle {
+  line-height: 1.87;
+  margin-bottom: 50px;
+}
+
+.vpn-info__button {
+  border: none;
+  background-color: #F53838;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 17.5px 78.5px;
+}
+
+.vpn-info__button:active {
+  box-shadow: 0 20px 50px rgba(245, 56, 56, 0.35);
 }
