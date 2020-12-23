@@ -30,6 +30,12 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Rubik';
   font-style: normal;
@@ -38,12 +44,6 @@ body {
   line-height: 1.2;
   color: #0B132A;
   background-color: #F6F6F6;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
 }
 
 .wrapper {
@@ -142,6 +142,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding-top: 205px;
+  margin-bottom: 127.5px;
 }
 
 .vpn-info {
@@ -171,3 +172,49 @@ body {
 .vpn-info__button:active {
   box-shadow: 0 20px 50px rgba(245, 56, 56, 0.35);
 }
+
+/* Intro style end */
+
+/* Achievements style start */
+
+.achievements__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 1px) 1fr;
+  justify-items: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 20px 20px rgba(13, 16, 37, 0.05);
+  margin-bottom: 96px;
+}
+
+.achievements__item {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+}
+
+.achievements__vertical-line {
+  height: 125.57px;
+  border-left: 2px solid #EEEFF2;
+}
+
+.achievement__img {
+  max-width: 55px;
+  max-height: 55px;
+  margin-right: 36.5px;
+}
+
+.achievement__description {
+  font-size: 20px;
+  line-height: 30px;
+  height: 65px;
+  color: #4F5665;
+}
+
+.line-divide {
+  font-weight: bold;
+  font-size: 25px;
+  color: #0B132A;
+}
+
+/* Achievements style end */
