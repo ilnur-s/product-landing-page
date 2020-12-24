@@ -253,7 +253,7 @@ body {
 }
 
 .list__item {
-  background: url(../img/features-list-icon.png) no-repeat left center;
+  background: url(../img/features-list-icon.png) no-repeat left;
   font-size: 14px;
   line-height: 30px;
   color: #4F5665;
@@ -262,3 +262,103 @@ body {
 }
 
 /* Features style end */
+
+/* Plans style start */
+
+.plans {
+  background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
+}
+
+.plans__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  margin-bottom: 150px;
+}
+
+.plans__title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.plans__subtitle {
+  max-width: 555px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.plan-cards {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 50px;
+}
+
+.plan-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #DDDDDD;
+  border-radius: 10px;
+  width: 330px;
+  height: 760px;
+}
+
+.plan-card:hover {
+  border: 2px solid #F53838;
+}
+
+.plan-card__pic {
+  margin: 80px 0 30px;
+}
+
+.plan-card__name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.plan-card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 230px;
+  margin-bottom: 50px;
+}
+
+.plan-card__info-item {
+  background: url(../img/plan-icon.png) no-repeat left;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4F5665;
+  padding-left: 44px;
+}
+
+.plan-card__price {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.plan-card__button {
+  margin-bottom: 50px;
+  background-color: #F6F6F6;
+  border: 1px solid #F53855;
+  border-radius: 50px;
+  color: #F53855;
+  font-weight: bold;
+  padding: 13px 45px;
+  transition: background-color 0.5s linear, color 0.5s linear;
+}
+
+.plan-card__button:hover,
+.plan-card__button:focus,
+.plan-card__button:active {
+  background-color: #F53855;
+  color: #F6F6F6;
+}
+/* Plans style end */
