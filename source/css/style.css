@@ -58,6 +58,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #F6F6F6;
 }
 
 .header__wrapper {
@@ -211,10 +212,53 @@ body {
   color: #4F5665;
 }
 
-.line-divide {
+.achievement__description-title {
   font-weight: bold;
   font-size: 25px;
   color: #0B132A;
 }
 
 /* Achievements style end */
+
+/* Features style start */
+
+.features__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 131px;
+}
+
+.features-info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.features-info__wrapper {
+  max-width: 428px;
+  max-height: 365px;
+}
+
+.features-info__title {
+  font-size: 35px;
+  line-height: 50px;
+  margin-bottom: 20px;
+}
+
+.features-info__subtitle {
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+  margin-bottom: 20px;
+}
+
+.list__item {
+  background: url(../img/features-list-icon.png) no-repeat left center;
+  font-size: 14px;
+  line-height: 30px;
+  color: #4F5665;
+  margin-bottom: 15px;
+  padding-left: 34px;
+}
+
+/* Features style end */
