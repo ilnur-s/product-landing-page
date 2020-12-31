@@ -420,6 +420,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .customers__title {
@@ -456,6 +457,7 @@ body {
   border-radius: 10px;
   width: 400px;
   height: 230px;
+  transform: translateX(530px);
 }
 
 .review:hover {
@@ -529,7 +531,7 @@ body {
   flex-wrap: wrap;
 }
 
-.buttons__back {
+.button__back {
   width: 60px;
   height: 60px;
   margin-right: 20px;
@@ -539,7 +541,7 @@ body {
   border: 2px solid #F53838;
 }
 
-.buttons__forward {
+.button__forward {
   width: 60px;
   height: 60px;
   background-color: #F53838;
