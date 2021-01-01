@@ -1,42 +1,37 @@
-const forwardButton = document.querySelector('.button__forward');
-const backButton = document.querySelector('.button__back');
 const reviews = document.querySelectorAll('.review');
+const allPages = document.querySelectorAll('.navigation-panel__item');
+const controlButtons = document.querySelector('.navigation-panel__control-buttons');
 
-let translateX = 530;
-let pageNumber = 0;
+const state = {
+  translateX: 530,
+  allPagesLength: allPages.length,
+  activePageIndex: 0,
+};
 
-forwardButton.addEventListener('click', () => {
-  translateX -= translateX === -1270 ? 0 : 450;
-  reviews.forEach((review) => {
-    review.style.transform = `translateX(${translateX}px)`;
-  });
+controlButtons.addEventListener('click', (event) => {
+  if (event.target.className === 'button__back') {
+    state.translateX += state.translateX === 530 ? 0 : 450;
+    reviews.forEach((review) => {
+      review.style.transform = `translateX(${state.translateX}px)`;
+    });
 
-  const otherPages = document.querySelectorAll('.navigation-panel__item');
-  console.log(otherPages.length)
-  const activePage = document.querySelector('.navigation-panel__item_active');
-  activePage.classList.remove('navigation-panel__item_active');
-  activePage.classList.add('navigation-panel__item');
-  otherPages[pageNumber].classList.add('navigation-panel__item_active');
-  otherPages[pageNumber].classList.remove('navigation-panel__item');
-  console.log(pageNumber);
-  pageNumber += pageNumber === 2 ? 0 : 1;
-  console.log(pageNumber);
-});
+    if (state.activePageIndex > 0) {
+      allPages[state.activePageIndex].classList.remove('navigation-panel__item_active');
+      allPages[state.activePageIndex - 1].classList.add('navigation-panel__item_active');
+      state.activePageIndex -= 1;
+    }
+  }
 
-backButton.addEventListener('click', () => {
-  translateX += translateX === 530 ? 0 : 450;
-  reviews.forEach((review) => {
-    review.style.transform = `translateX(${translateX}px)`;
-    console.log(review.style.transform);
-  });
+  if (event.target.className === 'button__forward') {
+    state.translateX -= state.translateX === -1270 ? 0 : 450;
+    reviews.forEach((review) => {
+      review.style.transform = `translateX(${state.translateX}px)`;
+    });
 
-  const otherPages = document.querySelectorAll('.navigation-panel__item');
-  console.log(otherPages.length)
-  const activePage = document.querySelector('.navigation-panel__item_active');
-  activePage.classList.remove('navigation-panel__item_active');
-  activePage.classList.add('navigation-panel__item');
-  otherPages[pageNumber].classList.add('navigation-panel__item_active');
-  otherPages[pageNumber].classList.remove('navigation-panel__item');
-  console.log(pageNumber);
-  pageNumber -= pageNumber === 0 ? 0 : 1;
+    if (state.activePageIndex < state.allPagesLength - 1) {
+      allPages[state.activePageIndex].classList.remove('navigation-panel__item_active');
+      allPages[state.activePageIndex + 1].classList.add('navigation-panel__item_active');
+      state.activePageIndex += 1;
+    }
+  }
 });
