@@ -28,6 +28,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -186,7 +187,6 @@ body {
   align-items: center;
   border-radius: 10px;
   box-shadow: 0 20px 20px rgba(13, 16, 37, 0.05);
-  margin-bottom: 96px;
 }
 
 .achievements__item {
@@ -228,6 +228,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 131px;
+  padding-top: 96px;
 }
 
 .features-info {
