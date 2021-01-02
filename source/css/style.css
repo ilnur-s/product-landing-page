@@ -59,6 +59,7 @@ body {
   left: 0;
   width: 100%;
   background-color: #FFFFFF;
+  z-index: 1;
 }
 
 .header__wrapper {
@@ -561,3 +562,150 @@ body {
 }
 
 /* Customers style end */
+
+/* Subscription style start */
+
+.subscription {
+  position: relative;
+  top: -116px;
+  width: auto;
+}
+
+.subscription__wrapper {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 233px;
+  width: 1140px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 0px 30px rgba(13, 16, 37, 0.05);
+}
+
+.subscription__info {
+  max-width: 371px;
+  max-height: 116px;
+  margin-left: 70px;
+}
+
+.subscription__title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45px;
+}
+
+.subscription__description {
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+}
+
+.subscription__button {
+  border: none;
+  background-color: #F53838;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 17.5px 78.5px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  margin-right: 70px;
+}
+
+.subscription__button:active {
+  box-shadow: 0 20px 50px rgba(245, 56, 56, 0.35);
+}
+/* Subscription style end */
+
+/* Footer style start */
+.footer {
+  background: #F8F8F8;
+  height: 563px;
+}
+
+.footer__wrapper {
+  padding-top: 180px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__info {
+  max-width: 340px;
+  margin-right: 230px;
+}
+
+.footer__logo {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.footer__logo-pic {
+  margin-right: 10px;
+}
+
+.footer__description {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+}
+
+.footer__contacts {
+  display: flex;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 30px;
+  color: #AFB5C0;
+}
+
+.product-info__title,
+.engage-info__title,
+.money-info__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.product-info__item,
+.engage-info__item,
+.money-info__item {
+  margin-bottom: 10px;
+}
+
+.product-info__link,
+.engage-info__link,
+.money-info__link {
+  text-decoration: none;
+  line-height: 30px;
+  color: #4F5665;
+}
+
+.product-info__link:hover,
+.product-info__link:active,
+.product-info__link:focus,
+.engage-info__link:hover,
+.engage-info__link:active,
+.engage-info__link:focus,
+.money-info__link:active,
+.money-info__link:focus,
+.money-info__link:hover {
+  opacity: 0.7;
+}
+
+.footer__product-info {
+  margin-right: 126px;
+}
+
+.footer__engage-info {
+  margin-right: 125px;
+}
+
+
+/* Footer style end */
